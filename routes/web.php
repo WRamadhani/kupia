@@ -15,5 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return Peribahasa::all();
+    return Peribahasa::all()->makeHidden(['id', 'created_at', 'updated_at']);
 });

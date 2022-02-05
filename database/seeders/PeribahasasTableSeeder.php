@@ -86,6 +86,27 @@ class PeribahasasTableSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now()
             ],
+            [
+                'slug' => 'ada-hujan-ada-panas-ada-hari-boleh-balas',
+                'peribahasa' => 'ada hujan ada panas, ada hari boleh balas',
+                'arti' => 'selalu ada kesempatan untuk membalas dendam.',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'slug' => 'ada-nyawa-ada-ikan',
+                'peribahasa' => 'ada nyawa, ada ikan',
+                'arti' => 'masih hidup, tetapi sudah hampir mati (dalam keadaan hampir mati).',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'slug' => 'ada-nyawa-ada-rezeki',
+                'peribahasa' => 'ada nyawa (umur), ada rezeki',
+                'arti' => 'selama masih hidup selama itu pula selalu mendapat penghidupan (penghasilan).',
+                'created_at' => now(),
+                'updated_at' => now()
+            ]
         ];
 
         Peribahasa::insert($data);

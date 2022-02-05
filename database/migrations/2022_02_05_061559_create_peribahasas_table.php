@@ -15,9 +15,9 @@ class CreatePeribahasasTable extends Migration
     {
         Schema::create('peribahasas', function (Blueprint $table) {
             $table->id();
-            $table->string('slug')->default(null);
-            $table->string('peribahasa')->default(null);
-            $table->string('arti')->default(null);
+            $table->string('slug')->nullable();
+            $table->string('peribahasa')->nullable();
+            $table->string('arti')->nullable();
             $table->timestamps();
         });
     }

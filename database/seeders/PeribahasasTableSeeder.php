@@ -15,8 +15,9 @@ class PeribahasasTableSeeder extends Seeder
     public function run()
     {
         Peribahasa::insert([
-            'peribahasa' => "abu di atas tanggul",
-            'arti' => "Tidak tetap kedudukannya (Sewaktu-waktu dapat dipecat dan sebagainya)"
+            'slug' => 'abu-di-atas-tanggul',
+            'peribahasa' => 'abu di atas tanggul',
+            'arti' => 'Tidak tetap kedudukannya (Sewaktu-waktu dapat dipecat dan sebagainya)'
         ]);
     }
 }

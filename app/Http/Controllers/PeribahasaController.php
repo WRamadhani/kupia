@@ -29,4 +29,19 @@ class PeribahasaController extends Controller
         // return "as";
         return $peribahasa;
     }
+
+    public function search($query)
+    {
+        // $peribahasa = Peribahasa::where('peribahasa', 'LIKE', "%{$query}%")
+        //     ->where('arti', 'LIKE', "{$query}")->get();
+        // return $peribahasa;
+        return $query;
+    }
+
+    public function random()
+    {
+        $total = Peribahasa::all();
+        $peribahasa = Peribahasa::where('id', rand(1, $total->count()));
+        return $peribahasa;
+    }
 }

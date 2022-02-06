@@ -20,4 +20,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('peribahasa', 'App\Http\Controllers\PeribahasaController@index');
 Route::get('peribahasa/{slug}', 'App\Http\Controllers\PeribahasaController@show');
-// Route::get('peribahasa/?q={keyword}', 'App\Http\Controllers\PeribahasaController@search');
+Route::get('peribahasa/search?query={query}', 'App\Http\Controllers\PeribahasaController@search');
+Route::get('peribahasa/random', 'App\Http\Controllers\PeribahasaController@random');

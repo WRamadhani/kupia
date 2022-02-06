@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
+
+Route::get('peribahasa', 'App\Http\Controllers\PeribahasaController@index');
+Route::get('peribahasa/{slug}', 'App\Http\Controllers\PeribahasaController@show');
+// Route::get('peribahasa/?q={keyword}', 'App\Http\Controllers\PeribahasaController@search');

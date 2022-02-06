@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', ['App\Http\Controllers\PeribahasaController', 'index']);
 Route::get('/', function () {
-    return Peribahasa::all()->makeHidden(['id', 'created_at', 'updated_at']);
+    return "asd";
 });

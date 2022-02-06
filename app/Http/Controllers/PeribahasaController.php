@@ -18,9 +18,9 @@ class PeribahasaController extends Controller
         // } else {
         //     $message = "good day";
         // }
-        $data = Peribahasa::all();
-        // return date('h:i:sa');
-        return $data;
+        // $data = Peribahasa::all();
+        return date('h:i:sa');
+        // return $data;
     }
 
     public function show($slug)
@@ -30,12 +30,12 @@ class PeribahasaController extends Controller
         return $peribahasa;
     }
 
-    public function search($query)
+    public function search(Request $request)
     {
-        // $peribahasa = Peribahasa::where('peribahasa', 'LIKE', "%{$query}%")
-        //     ->where('arti', 'LIKE', "{$query}")->get();
-        // return $peribahasa;
-        return "asd";
+        $query = $request['query'];
+        $peribahasa = Peribahasa::where('peribahasa', 'LIKE', "%{$query}%")
+            ->where('arti', 'LIKE', "%{$query}%")->get();
+        return $peribahasa;
     }
 
     public function random()

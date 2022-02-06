@@ -46,6 +46,7 @@ class PeribahasaController extends Controller
 
     public function search(Request $request)
     {
+        $query = $request['query'];
         $peribahasa = Peribahasa::where('peribahasa', 'LIKE', "%{$query}%")
             ->orWhere('arti', 'LIKE', "%{$query}%")->get();
         return $peribahasa;

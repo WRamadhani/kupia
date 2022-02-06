@@ -56,7 +56,7 @@ class PeribahasaController extends Controller
     {
         $total = Peribahasa::all();
         $id = rand(1, count($total));
-        $peribahasa = Peribahasa::where('id', $id);
+        $peribahasa = Peribahasa::where('id', $id)->get();
         return $peribahasa;
     }
 }

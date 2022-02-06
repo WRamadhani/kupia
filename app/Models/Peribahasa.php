@@ -15,4 +15,6 @@ class Peribahasa extends Model
      * @var array<int, string>
      */
     protected $fillable = ['peribahasa', 'arti'];
+
+    protected $hidden = ['created_at', 'updated_at', 'id'];
 }

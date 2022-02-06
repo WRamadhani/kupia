@@ -25,8 +25,8 @@ class PeribahasaController extends Controller
 
     public function show($slug)
     {
-        // $peribahasa = Peribahasa::where('id', '=', 1)->get();
-        return "as";
-        // return $peribahasa;
+        $peribahasa = Peribahasa::where('slug', '=', $slug)->get();
+        // return "as";
+        return $peribahasa;
     }
 }

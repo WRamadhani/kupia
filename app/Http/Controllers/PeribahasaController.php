@@ -54,9 +54,10 @@ class PeribahasaController extends Controller
 
     public function random()
     {
-        $total = Peribahasa::all()->count();
-        $id = rand(1, $total);
-        $peribahasa = Peribahasa::where('id', $id);
-        return $peribahasa;
+        $total = Peribahasa::all();
+        return count($total);
+        // $id = rand(1, $total);
+        // $peribahasa = Peribahasa::where('id', $id);
+        // return $peribahasa;
     }
 }

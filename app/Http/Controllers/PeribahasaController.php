@@ -18,9 +18,9 @@ class PeribahasaController extends Controller
         // } else {
         //     $message = "good day";
         // }
-        // $data = Peribahasa::all();
-        return date('h:i:sa');
-        // return $data;
+        $data = Peribahasa::all();
+        // return date('h:i:sa');
+        return $data;
     }
 
     public function show($slug)
@@ -34,7 +34,7 @@ class PeribahasaController extends Controller
     {
         $query = $request['query'];
         $peribahasa = Peribahasa::where('peribahasa', 'LIKE', "%{$query}%")
-            ->where('arti', 'LIKE', "%{$query}%")->get();
+            ->orWhere('arti', 'LIKE', "%{$query}%")->get();
         return $peribahasa;
     }
 

@@ -16,5 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 // Route::get('/', ['App\Http\Controllers\PeribahasaController', 'index']);
 Route::get('/', function () {
-    return "asd";
+    return response()->json([
+        'message' => 'asd'
+    ]);
 });

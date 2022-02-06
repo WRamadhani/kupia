@@ -35,7 +35,7 @@ class PeribahasaController extends Controller
         // $peribahasa = Peribahasa::where('peribahasa', 'LIKE', "%{$query}%")
         //     ->where('arti', 'LIKE', "{$query}")->get();
         // return $peribahasa;
-        return $query;
+        return "asd";
     }
 
     public function random()

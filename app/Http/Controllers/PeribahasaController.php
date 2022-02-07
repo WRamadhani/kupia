@@ -25,11 +25,15 @@ class PeribahasaController extends Controller
             $message = "Hi There 👋, Good Day";
         }
 
+        $data = Peribahasa::all();
+        $total = count($data);
+
         return response()->json([
             'greeting' => $message,
-            'message' => "Go visit link down below for documentation (It's not good, but it's there)",
-            'documentation' => "https://github.com/WRamadhani/kupia"
-        ]);
+            'message' => "Go visit link down below for documentation 👇 (It's not good, but it's there)",
+            'documentation' => "https://github.com/WRamadhani/kupia",
+            'total peribahasa' => "now we have in total {$total} peribahasa"
+        ], 200);
     }
 
     public function index()

@@ -106,9 +106,114 @@ class PeribahasasTableSeeder extends Seeder
                 'arti' => 'selama masih hidup selama itu pula selalu mendapat penghidupan (penghasilan).',
                 'created_at' => now(),
                 'updated_at' => now()
+            ],
+            [
+                'slug' => 'ada-padi-segala-menjadi',
+                'peribahasa' => 'ada padi segala menjadi',
+                'arti' => 'orang kaya dapat mencapai apa yang diinginkannya.',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'slug' => 'ada-rotan-ada-duri',
+                'peribahasa' => 'ada rotan, ada duri',
+                'arti' => 'kesenangan tentu ada kesusahannya.',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'slug' => 'ada-rupa-ada-harga',
+                'peribahasa' => 'ada rupa, ada harga',
+                'arti' => 'harga barang ditentukan oleh keadaan (kualitas) barang.',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'slug' => 'ada-sampan-hendak-berenang',
+                'peribahasa' => 'ada sampan hendak berenang',
+                'arti' => 'sengaja berpayah-payah (bersusah-susah) padahal tidak perlu berbuat begitu.',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'slug' => 'ada-uang-ada-barang',
+                'peribahasa' => 'ada uang, ada barang',
+                'arti' => 'jika sanggup membayar banyak (maka) akan mendapat barang yang lebih banyak.',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'slug' => 'ada-ubi-ada-talas-ada-budi-ada-balas',
+                'peribahasa' => 'ada ubi ada talas, ada budi ada balas',
+                'arti' => 'kejahatan dibalas dengan kejahatan, kebaikan dibalas dengan kebaikan.',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'slug' => 'ada-udang-di-balik-batu',
+                'peribahasa' => 'ada udang di balik batu',
+                'arti' => 'ada suatu maksud yang tersembunyi.',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'slug' => 'adakah-buaya-menolak-bangkai',
+                'peribahasa' => 'adakah buaya menolak bangkai',
+                'arti' => 'orang jahat akan berbuat jahat kalau ada kesempatan.',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'slug' => 'adapun-manikam-itu-jika-dijatuhkan-ke-dalam-limbahan-sekalipun-niscaya-tidak-akan-hilang-cahayanya',
+                'peribahasa' => 'adapun manikam (batu permata) itu jika dijatuhkan ke dalam limbahan sekalipun, niscaya tidak akan hilang cahayanya',
+                'arti' => 'orang yang asalnya baik jika ia miskin ataupun menjadi suruh-suruhan orang, tabiatnya, kelakuannya, dan budi bahasanya tetap baik.',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'slug' => 'adat-dagang-tahan-tawar',
+                'peribahasa' => 'adat dagang tahan tawar',
+                'arti' => 'sudah biasa bahwa barang dagangan boleh ditawar.',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'slug' => 'adat-diisi-janji-dilabuh',
+                'peribahasa' => 'adat diisih janji dilabuh',
+                'arti' => 'adat harus dijalankan, persetujuan harus ditepati.',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'slug' => 'adat-diisi-lembaga-dituang',
+                'peribahasa' => 'adat diisi, lembaga dituang',
+                'arti' => 'melakukan sesuatu menurut adat kebiasaan.',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'slug' => 'adat-hidup-tolong-menolong-syariat-palu-memalu',
+                'peribahasa' => 'adat hidup tolong-menolong, syariat palu memalu',
+                'arti' => 'dalam kehidupan sehari-hari harus saling menolong, dalam agama saling membantu.',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'slug' => 'adat-pasang-berturun-naik',
+                'peribahasa' => 'adat pasang berturuN naik',
+                'arti' => 'keadaan yang selalu berubah-ubah, terutama tentang kekayaan atau kedudukan seseorang.',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'slug' => 'adat-periuk-berkerak-adat-lesung-berdekak',
+                'peribahasa' => 'adat periuk berkerak adat lesung berdekak',
+                'arti' => 'jika ingin mendapat keuntungan dalam suatu pekerjaan, hendaklah seseorang dapat menanggung kesusahan.',
+                'created_at' => now(),
+                'updated_at' => now()
             ]
         ];
 
-        Peribahasa::insert($data);
+        Peribahasa::firstOrCreate($data);
     }
 }

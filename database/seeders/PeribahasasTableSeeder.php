@@ -15,7 +15,6 @@ class PeribahasasTableSeeder extends Seeder
     public function run()
     {
         $data = [
-
             [
                 'slug' => 'abu-di-atas-tanggul',
                 'peribahasa' => 'abu di atas tanggul',
@@ -158,6 +157,8 @@ class PeribahasasTableSeeder extends Seeder
             ]
         ];
 
-        Peribahasa::firstOrCreate($data);
+        foreach ($data as $key => $value) {
+            Peribahasa::firstOrCreate($data[$key]);
+        }
     }
 }

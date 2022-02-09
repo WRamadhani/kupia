@@ -207,8 +207,78 @@ class PeribahasasTableSeeder extends Seeder
             ],
             [
                 'slug' => 'adat-periuk-berkerak-adat-lesung-berdekak',
-                'peribahasa' => 'adat periuk berkerak adat lesung berdekak',
+                'peribahasa' => 'adat periuk berkerak, adat lesung berdekak',
                 'arti' => 'jika ingin mendapat keuntungan dalam suatu pekerjaan, hendaklah seseorang dapat menanggung kesusahan.',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'slug' => 'adat-sepanjang-jalan-cupak-sepanjang-betung',
+                'peribahasa' => 'adat sepanjang jalan, cupak sepanjang betung',
+                'arti' => 'segala sesuatu ada tata caranya.',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'slug' => 'adat-teluk-timbunan-kapal',
+                'peribahasa' => 'adat teluk timbunan kapal',
+                'arti' => 'perihal orang berkuasa, berpengaruh, dan sebagainya yang menjadi tempat orang meminta pertolongan, menyelesaikan perkara, dan sebagainya.',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'slug' => 'agih-agih-kungkang',
+                'peribahasa' => 'agih-agih kungkang',
+                'arti' => 'terlampau murah hati sehingga menderita kesusahan.',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'slug' => 'air-beriak-tanda-tak-dalam',
+                'peribahasa' => 'air beriak tanda tak dalam',
+                'arti' => 'orang yang banyak cakap atau sombing, biasanya kurang ilmunya.',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'slug' => 'air-besar-batu-bersibak',
+                'peribahasa' => 'air besar batu bersibak (retak)',
+                'arti' => 'persaudaraan atau keluarga menjadi cerai-berai jika ada perselisihan.',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'slug' => 'air-cucuran-atap-jatuh-ke-pelimbahan-juga',
+                'peribahasa' => 'air cucuran atap jatuh ke pelimbahan juga',
+                'arti' => 'biasanya sifat anak menurut teladan orangtuanya.',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'slug' => 'air-di-daun-keladi',
+                'peribahasa' => 'air di daun keladi',
+                'arti' => 'sukar (tidak bisa) diajar atau dinasehati.',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'slug' => 'air-dicencang-tiada-putus',
+                'peribahasa' => 'air dicencang tiada putus',
+                'arti' => 'persaudaraan tidak akan putus hanya karena perselisihan kecil.',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'slug' => 'air-diminum-rasa-duri-nasi-dimakan-rasa-sekam',
+                'peribahasa' => 'air diminum rasa duri, nasi dimakan rasa sekam',
+                'arti' => 'tidak enak makan dan minum karena (saat) menghadapi suatu malapetaka atau kendala.',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'slug' => 'air-jernih-ikannya-jinak',
+                'peribahasa' => 'air jernih ikannya jinak',
+                'arti' => 'negeri yang serba teratur dengan penduduknya yang serba baik, baik pula budi bahasanya.',
                 'created_at' => now(),
                 'updated_at' => now()
             ]

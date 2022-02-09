@@ -284,8 +284,10 @@ class PeribahasasTableSeeder extends Seeder
             ]
         ];
 
-        foreach ($data as $key => $value) {
-            Peribahasa::firstOrCreate($data[$key]);
-        }
+        Peribahasa::truncate();
+        Peribahasa::insert($data);
+        // foreach ($data as $key => $value) {
+        //     Peribahasa::firstOrCreate($data[$key]);
+        // }
     }
 }
